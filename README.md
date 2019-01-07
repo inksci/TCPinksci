@@ -1,2 +1,2 @@
 # TCPinksci
-TCP connection among python, java, C and etc.
+TCP connection among python, java and C, etc.
