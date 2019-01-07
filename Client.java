@@ -24,12 +24,12 @@ public class Client {
         InputStream in = s.getInputStream();
         byte[] buf = new byte[1024];
         int len = in.read(buf);
-        System.out.println( "接收到：" + new String(buf,0,len) );
+        System.out.println( "接收到：" + new String(buf,0,len,"utf-8") );
         
         
         // send and receive.
         OutputStream out = (OutputStream) s.getOutputStream();
-        out.write("hello Tcp".getBytes());
+        out.write("hello Tcp 我是客户端！".getBytes("utf-8"));
         // receive.
         in = s.getInputStream();
         buf = new byte[1024];
